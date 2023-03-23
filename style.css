@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: #FFFFFF;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #1E1E1E;; 
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #130F1E;
+    padding: 44px;
+    height: 100vh;
+    width: 500px; 
+}
+
+.boxText {
+    text-align: center;
+    margin-bottom: 68px;
+}
+
+.boxText h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+}
+
+.boxText p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+}
+
+.boxBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+img {
+    width: 16px;
+    height: 16px;
+
+}
+
+.primary:hover {
+    background-color: #9674E5;
+}
+
+.secondary:hover {
+    background-color: #6A617F;
+}
+
+.regular:focus {
+    outline: 2px solid #D9CDF7;
+}
+
+.buttonArrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    background-color: #3C3748;
+    border: #130F1E;
+    border-radius: 50px;
+
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+.alignBox {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.btn-primary button {
+    background-color: #8257E5;
+}
+
+.btn-secondary button {
+    background-color: #3C3748;
+ }
+
+ .btn-tertiary button {
+    background-color: transparent;
+ }
+
+button:disabled {
+    opacity: 0.56;
+    cursor: not-allowed;
+}
+
+.imageBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.loading {
+    cursor: progress;
+}
+
+.loading img {
+    animation: spin 700ms infinite linear;
+}
+
+.movable {
+    cursor: move;
+}
+
+.item {
+    display: none;
+}
+
+.current-item {
+    display: flex;
+}
+
+button {
+    padding: 12px 24px;
+    width:fit-content;
+    border-radius: 24px;
+    border: none;
+
+    width: 216px;
+    height: 48px;
+
+    font-family: 'Inter', sans-serif;  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

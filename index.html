@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões e Cursores</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <div class="app">
+            <div class="boxText">
+                <h1>Teste os botões</h1>
+                <p>Interaja com os botões e observe a mudança de aparência e de cursores</p>
+            </div>
+
+            <div class="boxBtn">
+                <button class="buttonArrow prev">
+                    ❮
+                </button>
+
+                <div class="alignBox btn-primary item current-item fade">
+                    <button class="primary regular">INTERAJA COMIGO</button>
+                    <button disabled>INTERAJA COMIGO</button>
+                    <button class="imageBox loading ">
+                        <img src="/assets/loading-icon.svg" alt="loading imagem">
+                        INTERAJA COMIGO
+                    </button>
+                    <button class="imageBox movable">
+                        <img src="/assets/movable-icon.svg" alt="menu hamburguer">
+                        INTERAJA COMIGO
+                    </button>
+                </div>
+
+                <div class="alignBox btn-secondary item fade">
+                    <button class="secondary regular">INTERAJA COMIGO</button>
+                    <button disabled>INTERAJA COMIGO</button>
+                    <button class="imageBox loading">
+                        <img src="/assets/loading-icon.svg" alt="loading imagem">
+                        INTERAJA COMIGO
+                    </button>
+                    <button class="imageBox movable">
+                        <img src="/assets/movable-icon.svg" alt="menu hamburguer">
+                        INTERAJA COMIGO
+                    </button>
+                </div>
+
+                <div class="alignBox btn-tertiary item fade">
+                    <button class="regular">INTERAJA COMIGO</button>
+                    <button disabled>INTERAJA COMIGO</button>
+                    <button class="imageBox loading">
+                        <img src="/assets/loading-icon.svg" alt="loading imagem">
+                        INTERAJA COMIGO
+                    </button>
+                    <button class="imageBox movable">
+                        <img src="/assets/movable-icon.svg" alt="menu hamburguer">
+                        INTERAJA COMIGO
+                    </button>
+                </div>
+                
+                <button class="buttonArrow next">
+                    ❯
+                </button>
+            </div>      
+        </div>
+
+        <script src="/script.js"></script>
+    </body>
+</html>
